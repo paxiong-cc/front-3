@@ -1,6 +1,8 @@
 <template>
   <section class="login-container">
-    登录
+    <a-button type="dashed">
+      Primary
+    </a-button>
   </section>
 </template>
 
