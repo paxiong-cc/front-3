@@ -1,19 +1,34 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import Home from '../views/Home.vue'
+import Login from '@/views/lrfn/login.vue'
+
+import ControlRouter from './control'
+import RoleRouter from './role'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: '',
+    redirect: '/login'
   },
+
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
+
+  // 角色模块
+  ...RoleRouter,
+  // 控制模块
+  ...ControlRouter,
+
+  {
+    path: '/404',
+    component: () => import('@/views/lrfn/notFound.vue')
+  },
+
+  {
+    path: '/:catchAll(.*)',
+    redirect: '/404'
   }
 ]
 
