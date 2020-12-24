@@ -8,7 +8,9 @@ import {
   Input,
   Select,
   Row,
-  Col
+  Col,
+  Menu,
+  Icon
 } from 'ant-design-vue'
 
 const app = createApp(App)
@@ -18,5 +20,7 @@ app.use(Col)
 app.use(Form)
 app.use(Input)
 app.use(Select)
+app.use(Menu)
+app.use(Icon)
 
 export default app

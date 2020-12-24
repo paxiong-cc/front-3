@@ -9,7 +9,7 @@ module.exports = {
     node: true,
     es6: true,
   },
-  extends: ['plugin:vue/recommended', 'eslint:recommended'],
+  extends: ['plugin:vue/vue3-recommended', 'eslint:recommended'],
 
   // add your custom rules here
   //it is base on https://github.com/vuejs/eslint-config-vue
@@ -42,7 +42,7 @@ module.exports = {
       'before': false,
       'after': true
     }],
-    'comma-style': [2, 'last'],
+    // 'comma-style': [2, 'last'],
     'constructor-super': 2,
     'curly': [2, 'multi-line'],
     'dot-location': [2, 'property'],
@@ -53,9 +53,9 @@ module.exports = {
       'after': true
     }],
     'handle-callback-err': [2, '^(err|error)$'],
-    'indent': [2, 2, {
-      'SwitchCase': 1
-    }],
+    // 'indent': [2, 2, {
+    //   'SwitchCase': 1
+    // }],
     'jsx-quotes': [2, 'prefer-single'],
     'key-spacing': [2, {
       'beforeColon': false,
@@ -142,19 +142,19 @@ module.exports = {
     }],
     'no-unreachable': 2,
     'no-unsafe-finally': 2,
-    'no-unused-vars': [2, {
-      'vars': 'all',
-      'args': 'none'
-    }],
+    // 'no-unused-vars': [2, {
+    //   'vars': 'all',
+    //   'args': 'none'
+    // }],
     'no-useless-call': 2,
     'no-useless-computed-key': 2,
     'no-useless-constructor': 2,
     'no-useless-escape': 0,
     'no-whitespace-before-property': 2,
     'no-with': 2,
-    'one-var': [2, {
-      'initialized': 'never'
-    }],
+    // 'one-var': [2, {
+    //   'initialized': 'never'
+    // }],
     'operator-linebreak': [2, 'after', {
       'overrides': {
         '?': 'before',

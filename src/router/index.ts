@@ -1,8 +1,8 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Login from '@/views/lrfn/login.vue'
 
-import ControlRouter from './control'
-import RoleRouter from './role'
+import ControlRouter from './modules/control'
+import RoleRouter from './modules/role'
 
 const routes: Array<RouteRecordRaw> = [
   {

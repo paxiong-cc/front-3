@@ -1,9 +1,9 @@
 <template>
-  <div class="header-box">
+  <aside class="side-box">
     <div class="left">logo</div>
     <div class="center">导航</div>
     <div class="right">登录</div>
-  </div>
+  </aside>
 </template>
 
 <script lang="ts">
