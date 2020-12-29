@@ -3,13 +3,13 @@ import { RouteRecordRaw } from 'vue-router'
 const RoleRouter: Array<RouteRecordRaw> = [
   {
     path: '/role',
-    name: '角色管理',
-    component: () => import('@/views/role/index.vue'),
+    name: '权限管理',
+    component: () => import('@/layout/index.vue'),
     redirect: '/role/manage',
     children: [
       {
         path: 'manage',
-        name: '管理中心',
+        name: '人员管理',
         component: () => import('@/views/role/manage/index.vue')
       }
     ]

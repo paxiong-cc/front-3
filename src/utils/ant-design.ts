@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import 'ant-design-vue/dist/antd.css'
-import App from '../App.vue'
+import App from '@/App.vue'
 
 import {
   Button,
@@ -10,8 +10,18 @@ import {
   Row,
   Col,
   Menu,
-  Icon
 } from 'ant-design-vue'
+
+// icon
+// import {
+//   MenuUnfoldOutlined,
+//   MenuFoldOutlined,
+//   DesktopOutlined,
+//   InboxOutlined,
+//   MailOutlined,
+//   PieChartOutlined,
+//   AppstoreOutlined
+// } from '@ant-design/icons-vue'
 
 const app = createApp(App)
 app.use(Button)
@@ -21,6 +31,6 @@ app.use(Form)
 app.use(Input)
 app.use(Select)
 app.use(Menu)
-app.use(Icon)
+// app.use(Icon)
 
 export default app
