@@ -17,17 +17,12 @@
 import TabBar from './components/TabBar/index.vue'
 import SideBar from './components/SideBar/index.vue'
 
-import { defineComponent, inject } from 'vue'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   components: {
     TabBar,
     SideBar
-  },
-
-  setup() {
-    const bus = inject('$bus')
-    console.log(bus)
   }
 })
 
